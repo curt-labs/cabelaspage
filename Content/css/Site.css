@@ -1,0 +1,123 @@
+body
+{
+    font-size: 12px;
+    font-family: Arial, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    margin: 0;
+    display: block;
+    width: 735px;
+    padding: 0 10px;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+select {
+    font-size: 11px;
+    border: 1px solid #b8b8b8;
+}
+
+#btnSubmit {
+    background: url('../img/btn-find.png') top left no-repeat;
+    height: 18px;
+    width: 34px;
+    cursor: pointer;
+    font-size: 0;
+    border: none;
+    vertical-align: middle;
+}
+
+#hitchlookup {
+	display: block;
+	padding: 10px 0;
+}
+
+#hitchlookup p {
+	font-size: 16px;
+	margin: 10px 0 0;
+	color: #333;
+	font-weight: bold;
+	font-family: Arial, Verdana;
+	float: left;
+}
+
+#hitchlookup #curtlogo {
+	float: right;
+}
+
+#lookup_summary {
+	display: block;
+    text-align: right;
+    font-size: 12px;
+}
+
+#lookup_summary span#vehicle_string {
+    float: left;
+    font-weight: bold;
+}

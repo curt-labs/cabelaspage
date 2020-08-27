@@ -1,0 +1,324 @@
+#part_container{
+    display: block;
+    position: relative;
+    z-index: 1;
+    background: #f4f3ef;
+	padding: 12px 11px;
+	border: 1px solid #9A967F;
+	margin: -1px 0 20px 0;
+}
+
+.part_tab_container{
+	margin-top: 10px;
+	display:none;
+	position: relative;
+	z-index: 2;
+}
+
+.part_tab_container ul{
+	list-style:none;
+	padding:0px;
+	margin: 0px;
+	clear:both;
+	position: relative;
+	z-index: 2;
+}
+
+.part_tab_container ul li {
+	list-style:none;
+	float:left;
+	margin: 0px;
+	height: 25px;
+	line-height: 24px;
+	display: inline;
+	color: #000;
+	padding-right: 27px;
+	border-left: 1px solid #9b9680;
+	border-bottom: 0;
+	background: url('../img/btn-tab.png') right -25px no-repeat;
+}
+
+.part_tab_container ul li.active {
+	background: url('../img/btn-tab.png') top right no-repeat;
+}
+
+.part_tab_container ul li.clear, .clear {
+    clear: both !important;
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 0 !important;
+    float: none !important;
+    border: 0 !important;
+}
+
+.part_tab_container ul li a {
+	display:block;
+	color: #fff;
+	text-decoration:none;
+	text-align:center;
+}
+
+.part_tab_container ul li.active a {
+    color: #000;
+}
+
+.part_tab_container ul li:hover a {
+    text-decoration: underline;
+}
+
+.part_tab_container ul li.active:hover a {
+    text-decoration: none;
+}
+
+.part_tab_container ul li a span {
+    display: block;
+    padding: 0 10px;
+	background: #9b9680;
+    border-top: 1px solid #9b9680;
+}
+
+.part_tab_container ul li.active a span {
+    display: block;
+    padding: 0 10px;
+	background: #f4f3ef;
+    border-top: 1px solid #9b9680;
+}
+
+.part_content{
+	clear:both;
+	display: block;
+	border: 1px solid #D2D0C9;
+	position: relative;
+	background-color: #fff;
+}
+
+.part_content:last-child{
+    box-shadow: 2px 2px 2px #e6e6e6;
+}
+
+.part_content .part{
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.part_content .part:last-child{
+    border: none;
+}
+
+.part_content .part .left_col{
+    float:left;
+    width: 330px;
+    padding-right: 13px;
+}
+
+.part_content .part .left_col div.image_array{
+    text-align: left;
+}
+
+.part_content .part .left_col div.image_array a.main{
+    width: 300px;
+    margin:auto;
+    display:block;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 300px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #D2D1CB
+}
+
+.part_content .part .left_col div.image_array a.sub{
+    text-decoration:none;
+    display: block;
+    float: left;
+    width: 39px;
+    height: 39px;
+    padding: 2px;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.part_content .part .left_col div.image_array a.sub.active {
+    border: 1px solid black;
+}
+
+.part_content .part .left_col div.image_array a.sub img{
+    width: 100%;
+    margin-right: 5px;
+    cursor:pointer;
+    height: auto;
+}
+
+.part_content .part .left_col div.image_array a.main img{
+    width: 100%;
+    margin:0;
+    height: auto;
+    border:none;
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+.part_content .part .right_col{
+    width: 335px;
+    float:right;
+}
+
+.part_content .part .right_col div.productInfo {
+    display: block;
+    border: 1px solid #9A967F
+}
+
+.part_content .part .right_col div.productInfo h1 {
+    margin: 0;
+    padding: 8px;
+    display: block;
+    background-color: #e4e4e1;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.part_content .part .right_col div.productInfo div.content {
+    padding: 10px 10px 0 10px;
+}
+.part_content .part .right_col div.productInfo div.content span.price{
+    font-size: 14px;
+    color: #900;
+    display:block;
+}
+
+.part_content .part .right_col div.productInfo div.content div.buttonContainer {
+    margin: 10px 0;
+    border-top: 1px solid #DBD9D4;
+    border-bottom: 1px solid #DBD9D4;
+    padding: 10px 0;    
+}
+
+.part_content .part .right_col a{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.part_content .part .right_col div.productInfo div.content div.buttonContainer input.addToCart {
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    height: 26px;
+    width: 97px;
+    display: block;
+    background: url('../img/btn-addToCart.png') top left no-repeat;
+    margin: auto;
+}
+
+.part_content .part .right_col div.productInfo div.content div.installation {
+    display: block;
+}
+
+.part_content .part .right_col div.productInfo div.content div.installation a.install {
+    float: right;
+    margin-bottom: 10px;
+    text-decoration:underline;
+    color: #222;
+    line-height: 20px;
+}
+.part_content .part .right_col div.productInfo div.content div.installation a.install img {
+    margin-left: 4px;
+    height: 20px;
+    width: 20px;
+    vertical-align: top;
+}
+
+.part_content .part .right_col div.productInfo div.content div.installation span.installtime {
+    float: left;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.part_content .part .right_col div.productInfo div.content div.installation span.installtime span {
+    font-weight: bold;
+}
+
+.part_content .part .right_col ul.attributeTabs {
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.part_content .part .right_col ul.attributeTabs li {
+    float: left;
+    list-style: none;
+    margin: 0px;
+    height: 25px;
+    line-height: 24px;
+    display: inline;
+    color: #000;
+    padding-right: 27px;
+    border-left: 1px solid #9b9680;
+    border-bottom: 0;
+    background: url('../img/btn-tab.png') right -25px no-repeat;
+}
+
+.part_content .part .right_col ul.attributeTabs li.active {
+    background: url('../img/btn-tab.png') top right no-repeat;
+}
+
+
+.part_content .part .right_col ul.attributeTabs li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin: 0;
+}
+
+.part_content .part .right_col ul.attributeTabs li.active a {
+	color: #000;
+}
+
+.part_content .part .right_col ul.attributeTabs li a span {
+    display: block;
+    padding: 0 10px;
+	background: #9B9680;
+    border-top: 1px solid #9b9680;
+}
+
+.part_content .part .right_col ul.attributeTabs li.active a span {
+	background: #f4f3ef;
+}
+
+.part_content .part .right_col div.attributes {
+    display: block;
+    border: 1px solid #9A967F;
+    background: #F4F3EF;
+    margin: -1px 0 10px 0;
+    padding: 12px 11px;
+    position: relative;
+    z-index: 1;
+}
+
+.part_content .part .right_col div.attributes div.attributeContent {
+    display: block;
+    border: 1px solid #D2D0C9;
+    background-color: #fff;
+}
+
+.part_content .part .right_col div.attributes table.details {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.part_content .part .right_col table.details tbody td {
+    background-color: #fff;
+    padding: 2px 4px;
+    font-size: 11px;
+}
+
+.part_content .part .right_col table.details tbody td.label {
+	font-weight: bold;
+}
